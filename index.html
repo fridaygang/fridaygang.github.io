@@ -7,11 +7,226 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" integrity="sha256-n+Ch7oRdzZ9+8/inp+1mK/0Bt4T/2PSmo4L6YGoDiVM=" crossorigin="anonymous">
   </head>
   <body>
-    <main class="container">
-      <nav class="nav">
-        <div class="nav-left"><a class="nav-item">Friday Gang</a></div>
-        <div class="nav-right"><div class="nav-item"><a class="button is-primary" onclick="reset()">Reset</a></div></div>
-      </nav>
+    <main>
+      <div class="container">
+        <nav class="nav">
+          <div class="nav-left"><a class="nav-item">Friday Gang</a></div>
+          <div class="nav-right"><div class="nav-item"><a class="button is-primary" onclick="reset()">Reset</a></div></div>
+        </nav>
+      </div>
+      <div class="card">
+        <header class="card-header"><p class="card-header-title">Game Scores</p></header>
+        <div class="card-content">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>Leg 1</th>
+                <th>Leg 2</th>
+                <th>Leg 3</th>
+                <th>Leg 4</th>
+                <th>Leg 5</th>
+                <th>Leg 6</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <select>
+                    <option value="" selected disabled>Player...</option>
+                    <option>Anne</option>
+                    <option>Jenner</option>
+                    <option>Gary</option>
+                    <option>Jules</option>
+                    <option>Luke</option>
+                    <option>Pete C</option>
+                    <option>Pete G</option>
+                    <option>Rob</option>
+                    <option>Tux</option>
+                    <option>Graham</option>
+                  </select>
+                </td>
+                <td><input type="number" id="player1leg1"></td>
+                <td><input type="number" id="player1leg2"></td>
+                <td><input type="number" id="player1leg3"></td>
+                <td><input type="number" id="player1leg4"></td>
+                <td><input type="number" id="player1leg5"></td>
+                <td><input type="number" id="player1leg6"></td>
+                <td><input type="number" id="player1total"></td>
+              </tr>
+              <tr>
+                <td>
+                  <select>
+                    <option value="" selected disabled>Player...</option>
+                    <option>Anne</option>
+                    <option>Jenner</option>
+                    <option>Gary</option>
+                    <option>Jules</option>
+                    <option>Luke</option>
+                    <option>Pete C</option>
+                    <option>Pete G</option>
+                    <option>Rob</option>
+                    <option>Tux</option>
+                    <option>Graham</option>
+                  </select>
+                </td>
+                <td><input type="number" id="player2leg1"></td>
+                <td><input type="number" id="player2leg2"></td>
+                <td><input type="number" id="player2leg3"></td>
+                <td><input type="number" id="player2leg4"></td>
+                <td><input type="number" id="player2leg5"></td>
+                <td><input type="number" id="player2leg6"></td>
+                <td><input type="number" id="player2total"></td>
+              </tr>
+              <tr>
+                <td>
+                  <select>
+                    <option value="" selected disabled>Player...</option>
+                    <option>Anne</option>
+                    <option>Jenner</option>
+                    <option>Gary</option>
+                    <option>Jules</option>
+                    <option>Luke</option>
+                    <option>Pete C</option>
+                    <option>Pete G</option>
+                    <option>Rob</option>
+                    <option>Tux</option>
+                    <option>Graham</option>
+                  </select>
+                </td>
+                <td><input type="number" id="player3leg1"></td>
+                <td><input type="number" id="player3leg2"></td>
+                <td><input type="number" id="player3leg3"></td>
+                <td><input type="number" id="player3leg4"></td>
+                <td><input type="number" id="player3leg5"></td>
+                <td><input type="number" id="player3leg6"></td>
+                <td><input type="number" id="player3total"></td>
+              </tr>
+              <tr>
+                <td>
+                  <select>
+                    <option value="" selected disabled>Player...</option>
+                    <option>Anne</option>
+                    <option>Jenner</option>
+                    <option>Gary</option>
+                    <option>Jules</option>
+                    <option>Luke</option>
+                    <option>Pete C</option>
+                    <option>Pete G</option>
+                    <option>Rob</option>
+                    <option>Tux</option>
+                    <option>Graham</option>
+                  </select>
+                </td>
+                <td><input type="number" id="player4leg1"></td>
+                <td><input type="number" id="player4leg2"></td>
+                <td><input type="number" id="player4leg3"></td>
+                <td><input type="number" id="player4leg4"></td>
+                <td><input type="number" id="player4leg5"></td>
+                <td><input type="number" id="player4leg6"></td>
+                <td><input type="number" id="player4total"></td>
+              </tr>
+              <tr>
+                <td>
+                  <select>
+                    <option value="" selected disabled>Player...</option>
+                    <option>Anne</option>
+                    <option>Jenner</option>
+                    <option>Gary</option>
+                    <option>Jules</option>
+                    <option>Luke</option>
+                    <option>Pete C</option>
+                    <option>Pete G</option>
+                    <option>Rob</option>
+                    <option>Tux</option>
+                    <option>Graham</option>
+                  </select>
+                </td>
+                <td><input type="number" id="player5leg1"></td>
+                <td><input type="number" id="player5leg2"></td>
+                <td><input type="number" id="player5leg3"></td>
+                <td><input type="number" id="player5leg4"></td>
+                <td><input type="number" id="player5leg5"></td>
+                <td><input type="number" id="player5leg6"></td>
+                <td><input type="number" id="player5total"></td>
+              </tr>
+              <tr>
+                <td>
+                  <select>
+                    <option value="" selected disabled>Player...</option>
+                    <option>Anne</option>
+                    <option>Jenner</option>
+                    <option>Gary</option>
+                    <option>Jules</option>
+                    <option>Luke</option>
+                    <option>Pete C</option>
+                    <option>Pete G</option>
+                    <option>Rob</option>
+                    <option>Tux</option>
+                    <option>Graham</option>
+                  </select>
+                </td>
+                <td><input type="number" id="player6leg1"></td>
+                <td><input type="number" id="player6leg2"></td>
+                <td><input type="number" id="player6leg3"></td>
+                <td><input type="number" id="player6leg4"></td>
+                <td><input type="number" id="player6leg5"></td>
+                <td><input type="number" id="player6leg6"></td>
+                <td><input type="number" id="player6total"></td>
+              </tr>
+              <tr>
+                <td>
+                  <select>
+                    <option value="" selected disabled>Player...</option>
+                    <option>Anne</option>
+                    <option>Jenner</option>
+                    <option>Gary</option>
+                    <option>Jules</option>
+                    <option>Luke</option>
+                    <option>Pete C</option>
+                    <option>Pete G</option>
+                    <option>Rob</option>
+                    <option>Tux</option>
+                    <option>Graham</option>
+                  </select>
+                </td>
+                <td><input type="number" id="player7leg1"></td>
+                <td><input type="number" id="player7leg2"></td>
+                <td><input type="number" id="player7leg3"></td>
+                <td><input type="number" id="player7leg4"></td>
+                <td><input type="number" id="player7leg5"></td>
+                <td><input type="number" id="player7leg6"></td>
+                <td><input type="number" id="player7total"></td>
+              </tr>
+              <tr>
+                <td>
+                  <select>
+                    <option value="" selected disabled>Player...</option>
+                    <option>Anne</option>
+                    <option>Jenner</option>
+                    <option>Gary</option>
+                    <option>Jules</option>
+                    <option>Luke</option>
+                    <option>Pete C</option>
+                    <option>Pete G</option>
+                    <option>Rob</option>
+                    <option>Tux</option>
+                    <option>Graham</option>
+                  </select>
+                </td>
+                <td><input type="number" id="player8leg1"></td>
+                <td><input type="number" id="player8leg2"></td>
+                <td><input type="number" id="player8leg3"></td>
+                <td><input type="number" id="player8leg4"></td>
+                <td><input type="number" id="player8leg5"></td>
+                <td><input type="number" id="player8leg6"></td>
+                <td><input type="number" id="player8total"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   </body>
